@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>테스트7</h1>
+</body>
+<script>
+    let promise = new Promise(function(resolve, reject) {
+        // let success = true;
+        // if(success) {
+        //     resolve('성공');
+        // } else {
+        //     reject('실패')
+        // }
+        resolve('성공')
+        reject('실패')
+    });
+
+    promise.then(function(result) {
+        console.log(result)
+    })
+    .catch(function(error) {
+        console.log(error)
+    })
+</script>
+</html>
